@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Категории</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/reset.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header_inner">
+            <div class="logo">
+                <img src="../images/ЭБИБЛИОТЕКА.png">
+                <span class="logo__text">ЭБИБЛИОТЕКА</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="../index.html" class="nav__link active">Главная</a></li>
+                    <li><a href="../pages/category.html" class="nav__link">Каталог</a></li>
+                    <li><a href="../pages/about.html" class="nav__link">О библиотеке</a></li>
+                    <li><a href="../pages/contacts.html" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <button class="theme-switch" type="button">
+                Тема
+            </button>
+        </div>
+    </header>
+    <main class="main">
+        <section class="catalog">
+            <div class="container">
+                <h1 class="section-title">Каталог книг</h1>
+                <div class="categories">
+                    <button class="category-btn" data-category="all">Все</button>
+                    <button class="category-btn" data-category="fantasy">Фантастика</button>
+                    <button class="category-btn" data-category="classic">Классика</button>
+                    <button class="category-btn" data-category="science">Научные</button>
+                </div>
+                <div class="books-grid">
+                    <article class="book-card" data-category="fantasy">
+                        <h3 class="book-card__title">Волшебник Изумрудного города</h3>
+                        <p class="book-card__author">Александр Волков</p>
+                    </article>
+                    <article class="book-card" data-category="classic">
+                        <h3 class="book-card__title">Бойцовский клуб</h3>
+                        <p class="book-card__author">Чак Паланик</p>
+                    </article>
+                    <article class="book-card" data-category="science">
+                        <h3 class="book-card__title">Робинзон Крузо</h3>
+                        <p class="book-card__author">Даниель Дефо</p>
+                    </article>
+                </div>
+                <section class="add-book">
+                    <h2>Добавить книгу</h2>
+                    <form class="add-book__form">
+                        <input type="text" placeholder="Название книги">
+                        <input type="text" placeholder="Автор">
+                        <select>
+                            <option value="">Выберите категорию</option>
+                            <option value="fantasy">Фантастика</option>
+                            <option value="classic">Классика</option>
+                            <option value="science">Научные</option>
+                        </select>
+                        <button type="submit">Добавить</button>
+                    </form>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">
+                2026 - ЭБИБЛИОТЕКА. Создатель - Мансур.
+            </p>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>
